@@ -1,3 +1,5 @@
+
+/* Request a GIF from GIPHY API, and append to HTML element*/
 function fetchGif() {
 	$('#search').text('Get another otter');
 	$.ajax({
@@ -14,6 +16,7 @@ function fetchGif() {
 });
 }
 
+/* Using a random number from 0 to 4, select one of four otter options*/
 function otterSelect() {
 	var randomNum = Math.floor(Math.random() * 5);
 	var string = "";
