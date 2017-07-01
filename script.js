@@ -1,7 +1,7 @@
 function fetchGif() {
 	$('#search').text('Get another otter');
 	$.ajax({
-    url: "http://api.giphy.com/v1/gifs/search?q="+otterSelect()+"&api_key=242b2536eefb4eb5961d2af4c122acbc",
+    url: "https://api.giphy.com/v1/gifs/search?q="+otterSelect()+"&api_key=242b2536eefb4eb5961d2af4c122acbc",
     success: function(results){
     	var randomIndex = Math.floor(Math.random() * 25);
         var data = results.data[randomIndex];
