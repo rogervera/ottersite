@@ -6,19 +6,31 @@
 		<meta name="author" content="Roger Vera">
 	    <meta name="description" content="Find the perfect otter GIF">
 	    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+
         <!--jQuery, linked from a CDN-->
-		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.2.min.js"></script>
+		<script src="http://code.jquery.com/jquery-3.2.1.js"></script>
+		<!-- Main Script -->
 		<script src="./script.js"></script>
+
+		<!-- Normalize.css is a customisable CSS file that makes 
+		browsers render all elements more consistently and in line 
+		with modern standards. -->
 		<link href="./normalize.css" rel="stylesheet">
+
+		<!-- My Style -->
 		<link href="./style.css" rel="stylesheet">
 	</head>
 
 	<body>
 		<div class="container">
+			<!-- Header image of otter -->
 			<img class="image" alt="Avatar" src="https://s-media-cache-ak0.pinimg.com/736x/fe/52/5c/fe525c09d85b21c37531419d6531350e--drawing-reference-baby-otters.jpg">
 		</div>
+			<!-- Header -->
 			<h1>Otter Gifs</h1>
+			<!-- Button used for search -->
 			<button id="search" onclick="fetchGif()">Get an otter</button>
+			<!-- Section where GIF will be displayed -->
 		<div class="container">
 			<section id="gifSection">
 			</section>
