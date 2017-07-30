@@ -29,23 +29,6 @@ h1 {
 	border-radius: 8px;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #fff3f9;
-}
-
-.container:hover .overlay {
-	opacity: 0.8;
-}
-
 .text {
   color: #999;
   font-size: 20px;
@@ -61,7 +44,12 @@ h1 {
 	margin: 0px 0px 20px 0px;
 	font-size: 14px;
 }
-#gif {
+
+#gifSection {
 	display: block;
 	margin: auto;
+}
+
+#gif {
+	width: 60%;
 }
